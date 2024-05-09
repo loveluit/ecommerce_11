@@ -1,0 +1,37 @@
+             <?php
+
+              $value = 0;
+
+              ?>
+
+
+//tyuu
+
+
+<?php
+
+$value = $value + $cart->product->price;
+
+?> 
+
+// rtht
+
+<div>
+
+<h3>Total Value of cart is:${{$value}}</h3>
+</div>
+
+
+
+
+  
+$data =Cart::Find($id);
+        $data->delete();
+
+
+        toastr()
+        ->persistent()
+        ->closeButton()
+        ->addSuccess('Your mycart has been delete success.');
+         
+         return redirect()->back();
